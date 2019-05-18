@@ -2,7 +2,7 @@ pipeline {
 		agent any 
 			stages 	{
 					stage ('SCM checkout') {
-					git 'https://github.com/krrkumarmy/jenkins-example.git' }
+					git ('https://github.com/krrkumarmy/jenkins-example.git') }
 				
 				stage ('sonar') {
 				 steps {
